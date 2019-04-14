@@ -1,0 +1,45 @@
+<div align='center'><h1>List of Users</h1></div>
+
+
+<table class ="table table-striped" >
+  <tr *ngFor="let u of users">
+    <td>
+      {{u.id}}
+    </td>
+    <td>
+      {{u.name}}
+    </td>
+    <td>
+      {{u.model}}
+    </td>
+
+  </tr>
+</table>
+<!--
+<input type="number" class="form-control" [(ngModel)] = 'fetchId' placeholder="Enter User ID to fetch" />
+<button class="btn btn-info" (click)= 'getUser()'>Fetch user</button> -->
+
+
+<br><br>
+
+    <input type="number" class="form-control" [(ngModel)] = 'idtoUpdate' placeholder="Enter User ID to update" />
+    <button class="btn btn-info" (click)= 'updateUser()'>Update User</button>
+
+    <!-- <div *ngIf="displayData">
+      <table class ="table">
+          <tr >
+            <td>
+              {{user.id}}
+            </td>
+            <td>
+              {{user.name}}
+            </td>
+            <td>
+              {{user.model}}
+            </td>
+          </tr>
+        </table> -->
+
+<br><br>
+    <button class="btn btn-danger" [routerLink]="['/home']" routerLinkActive="router-link-active" > Go Back</button>
+<router-outlet></router-outlet>
