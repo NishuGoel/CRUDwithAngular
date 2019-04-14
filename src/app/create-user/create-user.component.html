@@ -1,0 +1,23 @@
+ <h2>Create User</h2>
+
+ <form [formGroup]='userFormGroup' (ngSubmit)='addUser()'  novalidate >
+  <input class= "form-control" type="text" formControlName='name' placeholder="Enter Name"   />
+  <input class= "form-control" type="text" formControlName='model' placeholder="Enter Model"   />
+
+  <button class= 'btn btn-info'>Add User</button></form>
+
+  <br><br>
+  <table class ="table table-striped table-responsive">
+    <tr *ngFor="let u of users">
+      <td>
+        {{u.id}}
+      </td>
+      <td>
+        {{u.name}}
+      </td>
+      <td>
+        {{u.model}}
+      </td>
+
+    </tr>
+  </table>
