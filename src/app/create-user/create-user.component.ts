@@ -6,8 +6,7 @@ import { UserFetch } from '../user-fetch';
 
 @Component({
   selector: 'app-create-user',
-  templateUrl: './create-user.component.html',
-  styleUrls: ['./create-user.component.css']
+  templateUrl: './create-user.component.html'
 })
 export class CreateUserComponent implements OnInit {
   userFormGroup: FormGroup;
