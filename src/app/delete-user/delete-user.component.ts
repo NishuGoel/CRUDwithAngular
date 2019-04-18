@@ -5,8 +5,7 @@ import { UserFetch } from '../user-fetch';
 
 @Component({
   selector: 'app-delete-user',
-  templateUrl: './delete-user.component.html',
-  styleUrls: ['./delete-user.component.css']
+  templateUrl: './delete-user.component.html'
 })
 export class DeleteUserComponent implements OnInit {
   users: User[];
