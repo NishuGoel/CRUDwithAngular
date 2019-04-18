@@ -8,8 +8,7 @@ import { UserFetch } from '../user-fetch';
 
 @Component({
   selector: 'app-get-user',
-  templateUrl: './get-user.component.html',
-  styleUrls: ['./get-user.component.css']
+  templateUrl: './get-user.component.html'
 })
 export class GetUserComponent implements OnInit {
 
